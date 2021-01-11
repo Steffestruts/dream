@@ -1,0 +1,116 @@
+body {
+  background:  #222;
+  color: #E9E5DD;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1.5;
+  overflow-y: scroll;
+}
+
+a {
+  color: #fff4ca !important;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  margin: 0;
+}
+
+.navbar-section {
+  justify-content: center;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+
+.fa-angle-down:before,
+.navbar-brand,
+.navbar-section.logo {
+  display: none;
+}
+
+#start {
+  margin-top: 5rem;
+}
+
+#header {
+  background: transparent;
+  border: none;
+}
+
+.btn {
+  background: none;
+  border: none;
+}
+
+.btn:hover {
+  background: none;
+}
+
+.content-item h2 {
+  font-size: 3rem;
+}
+
+.p-name h5 {
+  font-size: 1em;
+}
+
+.blog-reading,
+.dt-published {
+  color: #454d5d;
+  font-size: .75rem;
+}
+
+.blog-item {
+  line-height: 1;
+  padding: .5em 1em;
+}
+
+.blog-item + .blog-item {
+  border-top: 1px solid rgba(255, 255, 255, .03);
+}
+
+#blog-hero {
+  display: none;
+}
+
+#header a {
+  color: #3085ee;
+}
+
+#header a:hover {
+  text-decoration: underline;
+}
+
+.dropmenu ul li a.active {
+  color: #454d5d !important;
+  text-decoration: none !important;
+}
+
+.dropmenu.animated {
+  font-size: .85rem;
+  font-weight: bold;
+}
+
+.pagination li {
+  color: #454d5d;
+  margin: 0 .5em;
+}
+
+.treemenu li {
+  background: none;
+}
+
+.treemenu li a.active {
+  color: #454d5d !important;
+}
+
+.mobile-menu .button_container span {
+  background: #fff4ca;
+}
+
+.toggler {
+  display: none;
+}
+

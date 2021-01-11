@@ -1,0 +1,17 @@
+{% set pagination = pagination|default(page.collection.params.pagination) %}
+{% set base_url = base_url|default(page.url) %}
+
+{% if pagination|length > 1 %}
+
+<ul class="pagination">
+    {% for paginate in pagination %}
+        {% if paginate.isCurrent %}
+            <li><span class="active">{{ paginate.number }}</span></li>
+        {% elseif paginate.isInDelta %}
+            {% set url = (base_url ~ pagination.params ~ paginate.url)|replace({'//':'/'}) %}
+            <li><a href="{{ url }}">{{ paginate.number }}</a></li>
+        {% endif %}
+    {% endfor %}
+</ul>
+
+{% endif %}
