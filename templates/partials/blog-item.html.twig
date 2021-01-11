@@ -16,10 +16,9 @@
 
 <p class="prev-next text-center">
     {% if not page.isLast %}
-            <a href="{{ page.prevSibling.url }}">Föregående</i></a>
+            <a href="{{ page.prevSibling.url }}">&larr; Föregående</i></a>
     {% endif %}
-
     {% if not page.isFirst %}
-        <a href="{{ page.nextSibling.url }}">Nästa</i></a>
+        <a href="{{ page.nextSibling.url }}">Nästa &rarr;</i></a>
     {% endif %}
 </p>
